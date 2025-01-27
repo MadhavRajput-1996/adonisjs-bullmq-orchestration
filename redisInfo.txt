@@ -1,0 +1,11 @@
+Redis Memory Configuration:
+bash
+CopyEdit
+redis-cli INFO memory
+Ensure sufficient memory is available and no eviction policies (like allkeys-lru) are causing data to be removed.
+Redis Eviction Policy:
+Verify the maxmemory-policy setting. Use:
+bash
+CopyEdit
+redis-cli CONFIG GET maxmemory-policy
+Ideally, this should be set to noeviction if Redis is dedicated to BullMQ.
