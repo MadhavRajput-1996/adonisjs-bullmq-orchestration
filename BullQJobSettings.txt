@@ -1,0 +1,56 @@
+Active Jobs for Workflow: [
+  Job {
+    queue: Queue {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      name: 'task-queue',
+      opts: [Object],
+      closed: false,
+      hasBlockingConnection: false,
+      connection: [RedisConnection],
+      qualifiedName: 'bull:task-queue',
+      keys: [Object],
+      toKey: [Function (anonymous)],
+      scripts: [Scripts],
+      token: '3c0f0982-e49f-474f-8197-30f71c64db4d',
+      libName: 'bullmq',
+      jobsOpts: [Object],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    name: 'sendEmail',
+    data: {
+      taskData: [Object],
+      workflowId: '31a6fc15-b42f-46a9-abb1-117a9a500e61'
+    },
+    opts: {
+      attempts: 0,
+      removeOnComplete: [Object],
+      removeOnFail: [Object],
+      backoff: undefined
+    },
+    id: '1',
+    progress: 0,
+    returnvalue: null,
+    stacktrace: [],
+    delay: 0,
+    priority: 0,
+    attemptsStarted: 0,
+    attemptsMade: 0,
+    repeatJobKey: undefined,
+    timestamp: 1737967379868,
+    parentKey: undefined,
+    parent: undefined,
+    debounceId: undefined,
+    deduplicationId: undefined,
+    toKey: [Function: bound ],
+    scripts: Scripts {
+      queue: [Queue],
+      version: '5.34.8',
+      moveToFinishedKeys: [Array]
+    },
+    queueQualifiedName: 'bull:task-queue',
+    failedReason: undefined
+  }
+]
